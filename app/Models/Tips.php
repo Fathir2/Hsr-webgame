@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Tips extends Model
+{
+    use HasFactory;
+
+    protected $table = 'tips';
+    protected $primaryKey = 'kd_tips';
+    protected $fillable = ['judul_tips', 'image_tips', 'link_tips'];
+}
